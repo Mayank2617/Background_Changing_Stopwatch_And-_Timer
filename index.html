@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/stopwatch.png">
+    <title>Stopwatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./saas/main.css">
+
+</head>
+<body>
+    <header id="header">
+        <div id="box1" class="box"><button> <img src="./images/dashboard.png" alt=""> Dashboard</button></div>
+        <div id="box2" class="box"><button><a href="index.html">Stopwatch</a></button></div>
+        <div id="box3" class="box"><button><a href="Timer/timer.html">Timer</a></button></div>
+        <div id="box4" class="box"><img src="./images/account(1).png" alt=""></div>
+    </header>
+    <main>
+        <!-- clock -->
+        <div class="stopwatch">
+            <!-- time diplay block -->
+            <div class="time">
+                <span id="display">
+                    <span class="diplay">
+                        <div id="hour">00 </div>
+                        <label for="timeInfo">Hour</label>
+                    </span>
+                    <span class="diplay">
+                        <div id="minute">00</div><label for="timeInfo">Minute</label>
+                    </span>
+                    <span class="diplay">
+                        <div id="second">00</div><label for="timeInfo">Second</label>
+                    </span>
+                    <span class="diplay">
+                        <div id="miliSec">00</div><label for="timeInfo">Decisecond</label>
+                    </span>
+                </span>
+            </div>
+            <!-- time controls block -->
+            <div class="controls">
+                <button id="startContinue" onclick="start()"> Start</button>
+                <button id="stopReset" onclick="stop()">
+                    Stop
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <!-- bg change button -->
+        <button id="changeBg" onclick="changeImage()"> <img src="./images/exchange.png" alt=""> Change
+            <br>Background</button>
+        <button id="fullScreen" onclick="toggleFullScreen()"> <img src="./images/maximize.png"
+                alt="">Fullscreen(f)</button>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

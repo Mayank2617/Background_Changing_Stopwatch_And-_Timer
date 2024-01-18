@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="../images/timerchoice.png">
+    <title>Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./Sass Timer/timer.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="box1" class="box"><button> <img src="../images/dashboard.png" alt=""> Dashboard</button></div>
+        <div id="box2" class="box"><button><a href="../index.html">Stopwatch</a></button></div>
+        <div id="box3" class="box"><button><a href="timer.html">Timer</a></button></div>
+        <div id="box4" class="box"><img src="../images/account(1).png" alt=""></div>
+    </header>
+    <main>
+        <!-- clock -->
+        <div class="timer">
+            <div id="box1" class="boxes">
+                <span id="displayHr">00</span><span class="colon">:</span>
+                <span id="displayMin">00</span><span class="colon">:</span>
+                <span id="displaySec">00</span>
+            </div>
+            <div id="box2" class="boxes">
+                <input type="text" id="hour" class="textFiled" placeholder="Enter Hours">
+                <input type="text" id="minute" class="textFiled" placeholder="Enter Minutes">
+                <input type="text" id="second" class="textFiled" placeholder="Enter Seconds">
+            </div>
+            <div id="box3" class="boxes">
+                <button id="start" onclick="start()"> Start</button>
+                <button id="stopReset" onclick="stopReset()">
+                    Stop
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <!-- bg change button -->
+        <button id="changeBg" onclick="changeImage()"> <img src="../images/exchange.png" alt=""> Change
+            <br>Background</button>
+        <button id="fullScreen" onclick="toggleFullScreen()"> <img src="../images/maximize.png"
+                alt="">Fullscreen(f)</button>
+    </footer>
+    <script src="timer.js"></script>
+</body>
+
+</html>
