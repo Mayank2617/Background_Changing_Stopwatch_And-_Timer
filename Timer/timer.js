@@ -70,6 +70,7 @@ const start = () => {
                     else {
                         if(remaningMinutes == 0 && remaningHours > 0) {
                             remaningHours--;
+                            remaningMinutes = 59;
                             remaningMinutes = 60;
                         }
                         else if (remaningSeconds == 0 && remaningMinutes > 0) {
@@ -108,6 +109,7 @@ const start = () => {
                     else {
                         if(remaningMinutes == 0 && remaningHours > 0) {
                             remaningHours--;
+                            remaningMinutes = 59;
                             remaningMinutes = 60;
                         }
                         else if (remaningSeconds == 0 && remaningMinutes > 0) {
